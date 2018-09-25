@@ -1,4 +1,6 @@
+#!/bin/bash
 yum groupinfo Base|grep -v 'Load\|Setting\|*\|Group\|Description\|Packages\|^$'|wc > ~/rpmbuilder/rpmstobuild
+cp ~/rpmbuilder/.rpmmacros /root/
 rm -rf ~/rpmbuild/SRPMS/*
 rm -rf ~/rpmbuild/SOURCES/*
 rm -rf ~/rpmbuild/SPECS/*
