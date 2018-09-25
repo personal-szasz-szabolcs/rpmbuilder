@@ -12,7 +12,7 @@ done < ~/rpmbuilder/rpmstobuild;
 
 rpm -ivh ~/rpmbuild/SRPMS/*;
 
-ls ~/rpmbuild/SPECS/* > /rpmbuilder/specslist;
+ls ~/rpmbuild/SPECS/* > ~/rpmbuilder/specslist;
 
 while read line; 
 do
