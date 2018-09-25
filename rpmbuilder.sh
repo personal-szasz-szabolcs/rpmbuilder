@@ -1,5 +1,5 @@
 #!/bin/bash
-yum groupinfo Base|grep -v 'Load\|Setting\|*\|Group\|Description\|Packages\|^$' > ~/rpmbuilder/rpmstobuild
+yum groupinfo Base|grep -v 'Load\|Setting\|*\|Group\|Description\|Packages\|^$'|tr -d + > ~/rpmbuilder/rpmstobuild
 cp ~/rpmbuilder/.rpmmacros /root/
 rm -rf ~/rpmbuild/SRPMS/*
 rm -rf ~/rpmbuild/SOURCES/*
