@@ -2,7 +2,7 @@
 script for rpm rebuild on CentOS
 Prerequisites:
 
-useradd mockbuilder
+useradd mockbuild
 useradd mock
 yum install -y rpmdevtools
 rpmdev-setuptree
